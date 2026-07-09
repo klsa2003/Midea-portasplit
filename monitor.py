@@ -18,6 +18,7 @@ new_status = {}
 
 found = []
 
+print("🔍 Starting Midea PortaSplit stock check...\n")
 
 def check_shop(shop):
 
@@ -58,8 +59,8 @@ def check_shop(shop):
         return status
 
 
-    except Exception:
-
+    except Exception as e:
+        print(f"   ❌ Error checking {shop['name']}: {e}")
         return False
 
 
@@ -70,10 +71,13 @@ for shop in config["shops"]:
 
     new_status[shop["name"]] = available
 
+    status_icon = "✅" if available else "❌"
+    print(f"{status_icon} {shop['name']}: {available}")
 
     if available and not old_status.get(shop["name"]):
 
         found.append(shop)
+        print(f"   🎉 NEW! {shop['name']} has stock!")
 
 
 
@@ -88,10 +92,11 @@ with open(
         indent=2
     )
 
-
+print(f"\n📊 Results saved. Found {len(found)} new items in stock.\n")
 
 if found:
 
+    print("📧 Sending email...\n")
 
     body = "Midea PortaSplit gevonden:\n\n"
 
@@ -130,3 +135,7 @@ if found:
         )
 
         smtp.send_message(msg)
+        print("✅ Email sent successfully!\n")
+
+else:
+    print("❌ No new stock found.\n")
