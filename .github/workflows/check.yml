@@ -1,0 +1,42 @@
+name: Midea PortaSplit voorraad
+
+on:
+
+  schedule:
+    - cron: "17 * * * *"
+
+  workflow_dispatch:
+
+
+jobs:
+
+  check:
+
+    runs-on: ubuntu-latest
+
+
+    steps:
+
+    - name: Code ophalen
+      uses: actions/checkout@v4
+
+
+    - name: Python installeren
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+
+
+    - name: Libraries installeren
+      run: |
+        pip install -r requirements.txt
+
+
+    - name: Controle uitvoeren
+      env:
+        MAIL_FROM: ${{ secrets.MAIL_FROM }}
+        MAIL_TO: ${{ secrets.MAIL_TO }}
+        MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
+
+      run: |
+        python monitor.py
