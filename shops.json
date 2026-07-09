@@ -1,0 +1,95 @@
+{
+  "product_keywords": [
+    "midea portasplit",
+    "midea porta split",
+    "portasplit 3.5",
+    "portasplit 12000",
+    "midea 12000 btu"
+  ],
+
+  "stock_keywords": [
+    "op voorraad",
+    "in winkelwagen",
+    "bestellen",
+    "direct leverbaar",
+    "lieferbar",
+    "sofort lieferbar",
+    "verfügbar",
+    "available"
+  ],
+
+  "shops": [
+    {
+      "name": "Midea NL",
+      "url": "https://www.midea.com/nl-en"
+    },
+    {
+      "name": "Ventilatieland",
+      "url": "https://www.ventilatieland.nl"
+    },
+    {
+      "name": "Bos Outdoor",
+      "url": "https://www.bosoutdoor.nl"
+    },
+    {
+      "name": "Groene Hoed Duurzaam",
+      "url": "https://www.groenehoedduurzaam.nl"
+    },
+    {
+      "name": "Maxi Trade",
+      "url": "https://www.maxi-trade.nl"
+    },
+    {
+      "name": "Bol.com",
+      "url": "https://www.bol.com"
+    },
+    {
+      "name": "Amazon Duitsland",
+      "url": "https://www.amazon.de"
+    },
+    {
+      "name": "Amazon Frankrijk",
+      "url": "https://www.amazon.fr"
+    },
+    {
+      "name": "Hornbach Duitsland",
+      "url": "https://www.hornbach.de"
+    },
+    {
+      "name": "Bauhaus Duitsland",
+      "url": "https://www.bauhaus.info"
+    },
+    {
+      "name": "OBI Duitsland",
+      "url": "https://www.obi.de"
+    },
+    {
+      "name": "Toom Duitsland",
+      "url": "https://www.toom.de"
+    },
+    {
+      "name": "Kaufland Duitsland",
+      "url": "https://www.kaufland.de"
+    },
+    {
+      "name": "MediaMarkt Duitsland",
+      "url": "https://www.mediamarkt.de"
+    },
+    {
+      "name": "Saturn Duitsland",
+      "url": "https://www.saturn.de"
+    },
+    {
+      "name": "ManoMano",
+      "url": "https://www.manomano.eu"
+    },
+    {
+      "name": "Idealo",
+      "url": "https://www.idealo.de"
+    },
+    {
+      "name": "Geizhals",
+      "url": "https://geizhals.eu"
+    }
+  ]
+}
